@@ -1,2 +1,3 @@
 # JS-Practice-Arena
-This is my launchpad for learning, experimentation, and progress. 
+
+🌿 Cultivating coding skills with JavaScript. This repo is where I experiment, test, and deploy my digital bonsai trees. 🌳
