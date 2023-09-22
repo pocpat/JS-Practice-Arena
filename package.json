@@ -4,7 +4,7 @@
   "description": "",
   "main": "camelCase2.js",
   "scripts": {
-    "test": "sh node_modules/.bin/jest test"
+    "test": "jest test"
   },
   "keywords": [],
   "author": "",
