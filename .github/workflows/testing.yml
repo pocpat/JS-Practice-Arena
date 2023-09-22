@@ -20,4 +20,6 @@ jobs:
     - name: Install
       run: npm install
     - name: Test
-      run: npm run test
+      run: |
+        chmod +x ./node_modules/.bin/jest
+        npm run test
