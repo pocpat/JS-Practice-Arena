@@ -29,20 +29,20 @@ return longestSubarrayLength;
 function minusOne(a) {
   let arr1 = [];
   let arr2 = [];
+
   for (let i = 0; i < a.length; i++) {
-    // console.log('sortedA[i]',sortedA[i]);
-    if (a[i+1] - a[i] <= 1) {
+    if (i < a.length - 1 && Math.abs(a[i + 1] - a[i]) <= 1) {
       arr1.push(a[i]);
-      console.log("arr1", arr1);
     } else {
       arr2.push(a[i]);
-      // console.log(arr2);
     }
   }
+
+  return arr1.reduce((sum, value) => sum + value, 0);
 }
 
 //  pickingNumbers([1,2,2,3,1,2]) // 5
 
  pickingNumbers([4, 6, 5, 3, 3, 1]); // 3
 // pickingNumbers([1, 1, 2, 2, 4, 4, 5, 5, 5]);
-module.exports = {pickingNumbers, minusOne};
+
